@@ -69,6 +69,9 @@ for dir in files:
               first_jpgPath = glob.glob(subDir[0] + '/ops/page_thumbnails/*.jpg')
               second_jpgPath = glob.glob(subDir[1] + '/ops/page_thumbnails/*.jpg')
               third_jpgPath = glob.glob(subDir[2] + '/ops/page_thumbnails/*.jpg')
+              resizeJpg(first_jpgPath)
+              resizeJpg(second_jpgPath)
+              resizeJpg(third_jpgPath)
 
 # 위에 있는 코드들이 다 실행 되고 나서, 모든 폴더들의 이름을 변경하기
 for f in files:
